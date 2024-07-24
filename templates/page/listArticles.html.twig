@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Pokemon : List
+{% endblock %}
+
+{% block body %}
+    <p>Les articles du blog : </p>
+
+    {% for pokemon in pokemons %}
+
+        {% if pokemon.isPublished %}
+<article class="pokemon">
+    <div class="pokemon-center">
+            <p>{{ pokemon.title }}</p>
+            <p>Description : {{ pokemon.content }}</p>
+        <a>Voir le pokemon</a>
+    </div>
+
+</article>
+        {% endif %}
+
+    {% endfor %}
+
+{% endblock %}

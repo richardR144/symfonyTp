@@ -1,0 +1,9 @@
+body {
+   background-color: blueviolet;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+li a {
+    list-style: none;
+}
